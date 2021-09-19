@@ -233,8 +233,8 @@ span {
 }
 
 .avatar__img {
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     border: 5px solid rgba(234, 15, 150, 0.9);
     box-shadow: inset 10px 10px 10px rgba(15, 219, 234, 0.9);
@@ -246,7 +246,7 @@ span {
 
 .avatar__title {
     cursor: pointer;
-    margin-top: -100px;
+    margin-top: -200px;
     -webkit-animation: balloon1 4s ease-in-out infinite;
     -moz-animation: balloon1 4s ease-in-out infinite;
     -o-animation: balloon1 4s ease-in-out infinite;
