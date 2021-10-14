@@ -11,16 +11,16 @@
 >
     <head>
         <meta charset="UTF-8" />
-        <!-- 0. Phần icon của website (thay đổi link đến icon nếu bạn muốn sửa nó) -->
+        
         <link rel="shortcut icon" type="image/png" href="./birthdayCake.png"/>
 
-        <!-- 1. Đây là phần title của website -->
+        
         <title>Happy Birthday</title>
         <link rel="stylesheet" href="./style.css">
         <script>
             window.open = function () {};
             window.print = function () {};
-            // Support hover state for mobile.
+            
             if (false) {
                 window.ontouchstart = function () {};
             }
@@ -39,8 +39,7 @@
             type="text/css"
         />
         <div class="container">
-            <!-- 2. Dòng chữ Happy Birthday
-            Nếu bạn muốn thêm chữ vào thì phải thay đổi css tương ứng cho nó -->
+          
             <div class="balloon">
                 <div><span>H</span></div>
                 <div><span>A</span></div>
@@ -57,13 +56,13 @@
                 <div><span>Y</span></div>
             </div>
             <div class="avatar">
-                <!-- 3. Avatar của người bạn muốn gởi lời chúc -->
+               
                 <img src="https://scontent.fhan5-5.fna.fbcdn.net/v/t1.15752-9/191696211_1880853805430051_7763813176167097339_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=ae9488&_nc_ohc=g7Tw0N9AGV4AX_dUF1o&_nc_ht=scontent.fhan5-5.fna&oh=9e2d6f4e0f8d882350300166fc192a6c&oe=61682881" alt="" class="avatar__img" onclick="showMessage()" />
-                <!-- 4. Tên của người đó -->
+               
                 <h1 onclick="showMessage()" class="avatar__title"><center>Zân  Khánk<center> </h1>
             </div>
             
-            <!-- 5. Phần nhạc -->
+         
             <audio id="player" autoplay loop>
                 <source src="https://cdn.glitch.com/108843e6-480f-451a-b0e1-91506c0431a2%2Fmusic.mp3?v=1631846594169" type="audio/mp3">
             </audio>
@@ -73,9 +72,9 @@
                 window.parent.postMessage("resize", "*");
             }
             function showMessage() {
-                // 6. Lời nhắn hiện ra khi bấm vào tên hoặc avatar
+             
                 swal({
-                    title: "❤️️Lời nhắn đến chị phù thủy❤️️", // Tiêu đề của popup
+                    title: "❤️️Lời nhắn đến chị phù thủy❤️️", 
                     text: "Chúc mừng sinh nhật, chúc chị thành công trong tất cả mọi việc ở tương lai, thật nhiều sức khỏe, xink đẹp tuyệt zời ❤️️From TDF with love❤️️", // Nội dung lời nhắn
                     button: {
                         text: "❤️️",
